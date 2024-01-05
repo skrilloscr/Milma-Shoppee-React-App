@@ -1,6 +1,6 @@
 export const initialState = {
-  cart: null,
-  total: null,
+  cart: [],
+  total: 0,
 };
 
 export const actionType = {
@@ -9,21 +9,26 @@ export const actionType = {
 };
 
 const reducer = (state, action) => {
-  console.log(action);
-
   switch (action.type) {
-    case actionType.SET_CART:
+    case "SET_CART":
+      // Calculate the total directly in the reducer
+      const newTotal = action.cart.reduce((acc, item) => acc + parseFloat(item.price), 0);
+      console.log("New Total:", newTotal); // Add this line for debugging
       return {
         ...state,
         cart: action.cart,
+        total: newTotal,
       };
-
-    case actionType.SET_TOTAL:
+      case "UPDATE_CART_ITEM":
+      const updatedCart = state.cart.map((item) =>
+        item.id === action.payload.id
+          ? { ...item, qty: action.payload.qty }
+          : item
+      );
       return {
         ...state,
-        total: action.total,
+        cart: updatedCart,
       };
-
     default:
       return state;
   }

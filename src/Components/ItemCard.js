@@ -53,7 +53,7 @@ function ItemCard({ itemId, imgSrc, name, price, ratings }) {
               </i>
             ))}
             <h3 className="price">
-              <span>$ </span>
+              <span>Rs </span>
               {price}
             </h3>
           </div>

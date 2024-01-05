@@ -26,7 +26,7 @@ header {
 
 .logo {
   min-width: 40px;
-  width: 50px;
+  width: 290px;
 }
 
 .inputBox {
@@ -74,7 +74,7 @@ header {
 .shoppingCart .cart_content {
   width: 20px;
   height: 20px;
-  background: #f8901c;
+  background: #178FCF;
   border-radius: 100%;
   min-width: 20px;
   min-height: 20px;
@@ -205,7 +205,7 @@ main {
   position: absolute;
   height: 60px;
   width: 60px;
-  background: #f8901c;
+  background: #178FCF;
   top: -50%;
   border-radius: 50%;
   border: 6px solid #faf9fb;
@@ -267,13 +267,14 @@ main {
   background: #faf9fb;
   padding: 10px;
   padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .banner {
   width: 100%;
   height: 130px;
   border-radius: 10px;
-  background: url("https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fbanner.png?alt=media&token=7e244d84-8821-477d-b273-4c9381a474fb")
+  background: url("./Assets/banner\ bg3.jpg")
     no-repeat center;
   background-size: cover;
   position: relative;
@@ -284,9 +285,9 @@ main {
 
 .deliveryPic {
   position: absolute;
-  right: -60px;
-  bottom: -10px;
-  width: 240px;
+  right: -25px;
+  bottom: -25px;
+  width: 200px;
 }
 
 .bannerContent {
@@ -300,23 +301,27 @@ main {
 .bannerContent h3 {
   font-size: 18px;
   font-weight: 500;
-  color: #2a2b3c;
+  color: #141416;
 }
 
 .bannerContent p {
   font-size: 14px;
   width: 200px;
-  color: #989594;
+  color: #181616;
   margin: 5px 0;
+  font-weight: 600;
 }
 
 .bannerContent p span {
-  color: #f8901c;
+  color: #050505;
   font-weight: 500;
+  background: #FFC107  ;
+  padding: 2px 10px;
+  border-radius: 100vw;
 }
 
 .bannerContent a {
-  background: #f8901c;
+  background: #455A64;
   padding: 5px 15px;
   border-radius: 100vw;
   color: #faf9fb;
@@ -354,12 +359,12 @@ main {
 
 .subMenuContianer .viewAll p {
   font-size: 12px;
-  color: #f8901c;
+  color: #178FCF;
   font-weight: 400;
 }
 
 .subMenuContianer .viewAll i {
-  background: #f8901c;
+  background: #178FCF;
   width: 20px;
   height: 20px;
   min-width: 20px;
@@ -407,7 +412,7 @@ main {
 
 .rowMenuCard:hover,
 .rowMenuCard.active {
-  background: #f8901c;
+  background: #178FCF;
 }
 
 .rowMenuCard .imgBox {
@@ -429,7 +434,7 @@ main {
 }
 
 .rowMenuCard .imgBox img {
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -444,7 +449,7 @@ main {
 .rowMenuCard h3 {
   font-size: 14px;
   font-weight: 500;
-  color: #f8901c;
+  color: #178FCF;
   transition: 0.5s;
 }
 
@@ -460,7 +465,7 @@ main {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  background: #f8901c;
+  background: #178FCF;
   transition: 0.5s;
 }
 
@@ -476,7 +481,7 @@ main {
 
 .rowMenuCard:hover .loadMenu .MuiSvgIcon-root,
 .rowMenuCard.active .loadMenu .MuiSvgIcon-root {
-  color: #f8901c;
+  color: #178FCF;
 }
 
 .dishItemContainer {
@@ -566,12 +571,12 @@ main {
 }
 
 .itemContent .bottom .price span {
-  color: #f8901c;
+  color: #178FCF;
   font-size: 12px;
 }
 
 .itemContent .addToCart {
-  background: #f8901c;
+  background: #178FCF;
   width: 25px;
   height: 25px;
   border-radius: 100%;
@@ -588,7 +593,7 @@ main {
 }
 
 .orange {
-  color: #f8901c !important;
+  color: #178FCF !important;
 }
 
 .gray {
@@ -610,7 +615,15 @@ main {
   transform: translateX(200%);
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+  overflow: scroll ; 
+  border-radius: 10px;
+  margin-top: -20px;
 }
+
+.rightMenu::-webkit-scrollbar{
+  display: none;
+}
+
 
 .rightMenu.active {
   transform: translateX(0%);
@@ -638,7 +651,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #f8901c;
+  background: #178FCF;
   transform: rotate(5deg);
   border-radius: 15px;
   filter: blur(2px);
@@ -815,7 +828,7 @@ main {
 }
 
 .cartItem .itemSection .itemQuantity span {
-  color: #f8901c;
+  color: #178FCF;
 }
 
 .cartItem .itemSection .itemQuantity .quantity {
@@ -845,7 +858,7 @@ main {
 
 .cartItem .itemPrice .dolorSign {
   font-size: 12px;
-  color: #f8901c;
+  color: #178FCF;
 }
 
 .cartItem .itemPrice .itemPriceValue {
@@ -855,6 +868,7 @@ main {
 
 .totalSection {
   width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -876,7 +890,7 @@ main {
 
 .totalSection p span {
   font-size: 14px;
-  color: #f8901c;
+  color: #178FCF;
 }
 
 .checkOut {
@@ -884,7 +898,7 @@ main {
   border: none;
   width: 100%;
   padding: 10px 20px;
-  background: #f8901c;
+  background: #178FCF;
   border-radius: 100vw;
   color: #faf9fb;
   font-size: 18px;
@@ -933,8 +947,9 @@ main {
   }
 
   .deliveryPic {
-    bottom: -13px;
-    width: 278px;
+    bottom: -49px;
+    width: 260px;
+    right: 25px;
   }
 
   .bannerContent h3 {
