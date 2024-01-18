@@ -17,6 +17,7 @@ function CartItem({ itemId, name, imgSrc, price }) {
   const updateQty = (action, id) => {
     if (action == "add") {
       setQty(qty + 1);
+      // setItemPrice(price + price)
     } else {
       // initial state value is one so you need to check if 1 then remove it
       if (qty == 1) {

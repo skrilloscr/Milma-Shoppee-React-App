@@ -5,6 +5,7 @@ import MenuContainer from "./Components/MenuContainer";
 import {
   Favorite,
   HomeRounded,
+  PriceChange,
   Settings,
 } from "@mui/icons-material";
 import BannerName from "./Components/BannerName";
@@ -16,8 +17,7 @@ import SubMenuContainer from "./Components/SubMenuContainer";
 import CartItem from "./Components/CartItem";
 import { useStateValue } from "./Components/StateProvider";
 import delimg from '../src/Assets/Take Away-rafiki.png';
-import Wishlist from "./Components/Wishlist";
-
+import wishlist from '../src/Components/Wishlist'
 function App() {
   const [isMainData, setMainData] = useState(
     Items.filter((element) => element.itemId === "Dairy01")
@@ -63,7 +63,7 @@ function App() {
           {/* prettier-ignore */}
           <MenuContainer link={'#'} icon={<HomeRounded />} isHome />
           {/* prettier-ignore */}
-          <MenuContainer link={<Wishlist/>} icon={<Favorite />} />
+          <MenuContainer link={'/wishlist'} icon={<Favorite />} isWishlist />
           {/* prettier-ignore */}
           <MenuContainer link={'#'} icon={<Settings />} />
           <div className="indicator"></div>
